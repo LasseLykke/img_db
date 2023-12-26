@@ -4,9 +4,11 @@ include 'connection.php';
 
 <html>
     <head>
+        <title>Img uploader</title>
         <body>
-            <h1>Header text</h1>
-            <p> test om det virker med merge</p>
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <button type="submit" name="submit">Upload</button>
         </body>
     </head>
 </html>
